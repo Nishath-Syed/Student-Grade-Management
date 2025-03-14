@@ -2,7 +2,7 @@
 <%@ page import="java.io.*" %>
 <%@ page session="true" %>
 <%
-                String name = (String)session.getAttribute("user");
+        String name = (String)session.getAttribute("user");
         if(name!=null)
         {
 %>
@@ -64,14 +64,11 @@
         
 
         form {
-            /*margin-bottom: 20px;*/
             display: flex;
             flex-direction: column;
         }
 
         label {
-            /*display: block;
-            margin-bottom: 10px;*/
             text-align: left;
             margin-bottom: 5px;
         }
@@ -122,7 +119,6 @@
     </header>
     <nav>
         <a href="teahome.html">Home</a>
-		<!--<a href="login.html">Login</a>-->
         <a href="teaprofile.jsp">Profile</a>
         <a href="grade_entry.jsp">Grades</a>
         <a href="studlist.jsp">Students List</a>

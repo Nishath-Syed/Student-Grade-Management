@@ -107,7 +107,6 @@ try
     </header>
     <nav>
         <a href="teahome.html">Home</a>
-		<!--<a href="login.html">Login</a>-->
         <a href="teaprofile.jsp">Profile</a>
         <a href="grade_entry.jsp">Grades</a>
         <a href="studlist.jsp">Students List</a>

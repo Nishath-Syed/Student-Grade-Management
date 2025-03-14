@@ -66,7 +66,6 @@
     </header>
     <nav>
         <a href="teahome.html">Home</a>
-        <!--<a href="login.html">Login</a>-->
         <a href="teaprofile.jsp">Profile</a>
         <a href="grade_entry.jsp">Grades</a>
         <a href="studlist.jsp">Students List</a>
@@ -82,27 +81,24 @@
             int smarks3 = Integer.parseInt(request.getParameter("subject3"));
             int smarks4 = Integer.parseInt(request.getParameter("subject4"));
             int smarks5 = Integer.parseInt(request.getParameter("subject5"));
-            int id = 0; // Initialize id variable
+            int id = 0; 
             boolean marksStored = false; 
 
             try {
-                // Establish database connection
+
                 Class.forName("oracle.jdbc.driver.OracleDriver");
                 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "system", "kento");
 
-                // Retrieve student ID
                 PreparedStatement pstmt = con.prepareStatement("SELECT sid FROM std WHERE sname=?");
                 pstmt.setString(1, sname);
                 ResultSet rs = pstmt.executeQuery();
 
-                // Check if student exists
                 if (rs.next()) {
-                    id = rs.getInt("sid"); // Retrieve student ID
+                    id = rs.getInt("sid"); 
                 } else {
-                    throw new SQLException("Student not found!"); // Handle case when student is not found
+                    throw new SQLException("Student not found!"); 
                 }
 
-                // Insert marks into the database
                 String qry = "INSERT INTO marks VALUES (?, ?, ?, ?, ?, ?)";
                 PreparedStatement stmt = con.prepareStatement(qry);
                 stmt.setInt(1, id);
@@ -115,12 +111,10 @@
                 stmt.executeUpdate();
                 marksStored = true; 
 
-                // Close resources
                 con.close();
             } catch (Exception e) {
-                // Log error
+
                 e.printStackTrace();
-                // Display user-friendly error message
                 out.print("<h2>Failed to store Marks.</h2>");
             }
             if (marksStored) {

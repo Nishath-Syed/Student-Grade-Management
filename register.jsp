@@ -11,14 +11,14 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
-            text-align: center; /* Center align text in body */
+            text-align: center; 
 			background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-science-and-technology-light-effect-technology-blue-technology-background-picture-image_1472618.jpg');
 			background-size: cover;
             background-repeat: no-repeat;
         }
 
         h1, h2 {
-            margin-top: 50px; /* Add some space from the top */
+            margin-top: 50px; 
         }
     </style>
 </head>

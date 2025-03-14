@@ -118,7 +118,6 @@ try
     </header>
     <nav>
         <a href="studhome.html">Home</a>
-		<!--<a href="login.html">Login</a>-->
         <a href="studprofile.jsp">Profile</a>
         <a href="grades.jsp">Grades</a>
         <a href="tealist.jsp">Teachers List</a>
@@ -126,7 +125,6 @@ try
 
     </nav>
     <div class="container">
-        <!--<img src="student.jpg" alt="Student Picture">-->
         <table>
             <tr>
                 <th colspan="2" style="text-align: center">Student Details</th>
@@ -199,6 +197,5 @@ try
 else
 {
     out.print(name);
-//response.sendRedirect("login.html");
 }
 %>

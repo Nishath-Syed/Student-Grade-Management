@@ -98,7 +98,6 @@
     </header>
     <nav>
         <a href="studhome.html">Home</a>
-        <!--<a href="login.html">Login</a>-->
         <a href="studprofile.jsp">Profile</a>
         <a href="grades.jsp">Grades</a>
         <a href="tealist.jsp">Teachers List</a>
@@ -118,16 +117,14 @@
                 Class.forName("oracle.jdbc.driver.OracleDriver");
                 Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","kento");
 
-                // Retrieve student ID
                 PreparedStatement pstmt = con.prepareStatement("SELECT sid FROM std WHERE suname=?");
                 pstmt.setString(1, name);
                 ResultSet rs1 = pstmt.executeQuery();
 
-                // Check if student exists
                 if (rs1.next()) {
-                    id = rs1.getInt("sid"); // Retrieve student ID
+                    id = rs1.getInt("sid"); 
                 } else {
-                    throw new SQLException("Student not found!"); // Handle case when student is not found
+                    throw new SQLException("Student not found!"); 
                 }
 
                 String qry="select * from marks where sid=?";

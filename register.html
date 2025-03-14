@@ -1,0 +1,417 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /*body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }*/
+		 body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /*background-color: #f0f0f0;*/
+            background-image: url('https://img.freepik.com/free-vector/geometric-gradient-futuristic-background_23-2149116406.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1713916800&semt=ais'); /* Add the path to your background image here */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
+        /*.container {
+            width: 600px; /* Increased width 
+            padding: 5px 20px; /* Adjusted padding 
+            background-color: #fff;
+            border-radius: 10px; /* Increased border radius 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }*/
+		.container {
+            width: 600px;
+            padding: 5px 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 90vh; /* Decreased height */
+    overflow-y: auto; /* Added vertical scrollbar if content exceeds height */
+}
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        label {
+            font-weight: bold;
+            width: 45%;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+		input[type="number"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            padding: 8px;
+            width: 50%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 8px; /* Adjusted padding */
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            width: 30%; /* Adjusted width */
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center; /* Center buttons horizontally */
+            margin-top: 20px;
+            width: 100%; /* Full width */
+        }
+
+        .button-container button {
+            margin: 0 10px; /* Added margin between buttons */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form name="register" action="register.jsp" method="POST">
+            <label for="studentId">Student ID:</label>
+            <input type="number" id="studentId" name="sid" required>
+
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="sname" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="sgender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="sdob" required>
+
+            <label for="programme">Programme:</label>
+            <select id="programme" name="sprog" required>
+                <option value="B.Tech">B.Tech</option>
+				<option value="M.Tech">M.Tech</option>
+                <option value="MBA">MBA</option>
+            </select>
+
+            <label for="branch">Branch:</label>
+            <select id="branch" name="sbranch" required>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+				<option value="IT">IT</option>
+				<option value="AIDS">AIDS</option>
+				<option value="CSM">CSM</option>
+				<option value="ASE">ASE</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Civil">Civil</option>
+            </select>
+
+            <label for="section">Section:</label>
+            <select id="section" name="ssec" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+
+            <label for="motherName">Mother's Name:</label>
+            <input type="text" id="motherName" name="smother" required>
+
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="sfather" required>
+
+            <label for="studentMobile">Student Mobile:</label>
+            <input type="number" id="studentMobile" name="sphno" required>
+
+            <label for="parentMobile">Parent Mobile:</label>
+            <input type="number" id="parentMobile" name="pphno" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="semail" required>
+
+			<label for="username">Username:</label>
+            <input type="text" id="username" name="suname" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="spwd" required>
+
+<div class="button-container">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /*background-color: #f0f0f0;*/
+            background-image: url('https://img.freepik.com/free-vector/geometric-gradient-futuristic-background_23-2149116406.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1713916800&semt=ais'); /* Add the path to your background image here */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /*.container {
+            width: 600px; /* Increased width 
+            padding: 5px 20px; /* Adjusted padding 
+            background-color: #fff;
+            border-radius: 10px; /* Increased border radius 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }*/
+		.container {
+            width: 600px;
+            padding: 5px 20px;
+            /*background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+            background-color: transparent; /* Make the background color transparent */
+             border-radius: 20px;
+             box-shadow: none; /* Remove the box shadow */
+            height: 90vh; /* Decreased height */
+            overflow-y: auto; /* Added vertical scrollbar if content exceeds height */
+         }
+         ::-webkit-scrollbar {
+              display: none;
+          }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color : white;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        label {
+            font-weight: bold;
+            width: 45%;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+		input[type="number"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            padding: 8px;
+            width: 50%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+			border-radius: 10px;
+        }
+
+        button {
+            padding: 8px; /* Adjusted padding */
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            width: 30%; /* Adjusted width */
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center; /* Center buttons horizontally */
+            margin-top: 20px;
+            width: 100%; /* Full width */
+        }
+
+        .button-container button {
+            margin: 0 10px; /* Added margin between buttons */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form name="register" action="register.jsp" method="POST" onsubmit="return validateForm()">
+            <label for="studentId">Student ID:</label>
+            <input type="number" id="studentId" name="sid" required>
+
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="sname" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="sgender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="sdob" required>
+
+            <label for="programme">Programme:</label>
+            <select id="programme" name="sprog" required>
+                <option value="B.Tech">B.Tech</option>
+				<option value="M.Tech">M.Tech</option>
+            </select>
+
+            <label for="branch">Branch:</label>
+            <select id="branch" name="sbranch" required>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+				<option value="EEE">EEE</option>
+				<option value="IT">IT</option>
+				<option value="AI&DS">AI&DS</option>
+				<option value="CSM">CSM</option>
+				<option value="ASE">ASE</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Civil">Civil</option>
+            </select>
+
+            <label for="section">Section:</label>
+            <select id="section" name="ssec" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+
+            <label for="motherName">Mother's Name:</label>
+            <input type="text" id="motherName" name="smother" required>
+
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="sfather" required>
+
+            <label for="studentMobile">Student Mobile:</label>
+            <input type="number" id="studentMobile" name="sphno" required>
+
+            <label for="parentMobile">Parent Mobile:</label>
+            <input type="number" id="parentMobile" name="pphno" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="semail" required>
+
+			<label for="username">Username:</label>
+            <input type="text" id="username" name="suname" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="spwd" required>
+
+<div class="button-container">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+	<script>
+        function validateForm() {
+            var studentId = document.getElementById("studentId").value;
+            var name = document.getElementById("name").value;
+            var studentMobile = document.getElementById("studentMobile").value;
+            var parentMobile = document.getElementById("parentMobile").value;
+            var email = document.getElementById("email").value;
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var studentIdRegex = /^\d+$/;
+            var mobileRegex = /^\d{10}$/;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!studentIdRegex.test(studentId)) {
+                alert("Student ID must be a number");
+                return false;
+            }
+
+            if (name === null || typeof name !== "string" || name.length < 5) {
+               alert("Please enter a valid name (at least 5 characters)");
+                return false;
+            }
+
+            if (!mobileRegex.test(studentMobile) || !mobileRegex.test(parentMobile)) {
+                alert("Please enter a valid mobile number");
+                return false;
+            }
+
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+
+            if (username.length < 5) {
+                alert("Username must be at least 5 characters");
+                return false;
+            }
+
+            var passwordRegex = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+            if (!passwordRegex.test(password)) {
+                alert("Password must contain at least one number, one special character, one lowercase letter, one uppercase letter, and be at least 8 characters long");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

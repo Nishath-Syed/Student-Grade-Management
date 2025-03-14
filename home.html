@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <style>
+		body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+		nav a:hover {
+            color: orangered; 
+        }
+
+         .hero {
+            background-image: url('https://a.storyblok.com/f/64062/3750x1969/ced13f19fe/early-admits-student-panel.png/m/');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+		.hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+			margin-top: 20px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        /* Adding new style for program boxes */
+        .program-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap; /* Allow wrapping to next line */
+			
+        }
+
+        .program-box {
+            width: calc(30% - 20px); /* Adjust the width as needed */
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .program-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .program-box h4 {
+            margin-top: 0;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .program-box p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        /* Gradient background */
+        .program-box::before {
+            /*content: "";*/
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
+            border-radius: 10px;
+            z-index: -1;
+        }
+
+        @media (max-width: 768px) {
+            .program-box {
+                width: calc(45% - 20px);
+            }
+        }
+
+        /*@media (max-width: 480px) {
+            .program-box {
+                width: calc(100% - 20px);
+            }
+			/* footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;  Ensure it's above other elements 
+}
+		footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            bottom:0;
+            clear:both;
+        }*/
+		footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Change position to relative */
+    width: 100%;
+    clear: both;
+}
+    </style>
+</head>
+<body>
+    <!-- Your existing HTML content -->
+	<header>
+        <h1>Horizon College</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+		<a href="login.html">Login</a>
+		<!--<a href="#">Profile</a>
+		<a href="#">Grades</a>-->
+		<a href="logout.jsp">Logout</a>
+    </nav>
+	<div class="hero">
+        <div>
+            <h1>Welcome to Horizon</h1>
+            <p>Empowering Minds, Building Futures</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Our Programs</h2>
+        <!-- Bachelor's Degree Programs -->
+        <h3>Bachelor's Degree Programs</h3>
+        <div class="program-container">
+            <!-- Program boxes for Bachelor's Degree Programs -->
+            <div class="program-box">
+                <h4>Program 1: Bachelor of Science in Computer Science</h4>
+                <p>This program provides students with a strong foundation in computer science principles and practical skills...</p>
+                <p>Degree Duration: 4 years</p>
+                <p>Admission Requirements: High school diploma or equivalent</p>
+            </div>
+            <div class="program-box">
+                <h4>Program 2: Bachelor of Arts in Psychology</h4>
+                <p>This program offers students a comprehensive understanding of human behavior and mental processes...</p>
+                <p>Degree Duration: 4 years</p>
+                <p>Admission Requirements: High school diploma or equivalent</p>
+            </div>
+            <div class="program-box">
+                <h4>Program 3: Bachelor of Business Administration</h4>
+                <p>This program equips students with essential knowledge and skills in business management, finance, marketing, and more...</p>
+                <p>Degree Duration: 4 years</p>
+                <p>Admission Requirements: High school diploma or equivalent</p>
+            </div>
+        </div>
+
+        <!-- Master's Degree Programs -->
+        <h3>Master's Degree Programs</h3>
+        <div class="program-container">
+            <!-- Program boxes for Master's Degree Programs -->
+            <div class="program-box">
+                <h4>Program 4: Master of Science in Data Science</h4>
+                <p>This program trains students in advanced data analysis techniques, machine learning algorithms, and big data management...</p>
+                <p>Degree Duration: 2 years</p>
+                <p>Admission Requirements: Bachelor's degree in a related field</p>
+            </div>
+            <div class="program-box">
+                <h4>Program 5: Master of Fine Arts in Creative Writing</h4>
+                <p>This program fosters creativity and literary excellence through workshops, seminars, and individualized mentorship...</p>
+                <p>Degree Duration: 2 years</p>
+                <p>Admission Requirements: Bachelor's degree in any field, writing portfolio</p>
+            </div>
+            <div class="program-box">
+                <h4>Program 6: Master of Business Administration</h4>
+                <p>This program prepares professionals for leadership roles in business administration, strategic management, and entrepreneurship...</p>
+                <p>Degree Duration: 2 years</p>
+                <p>Admission Requirements: Bachelor's degree in any field, work experience preferred</p>
+            </div>
+        </div>
+    </div>
+    <!-- Your existing HTML content -->
+	<footer>
+        &copy; 2024 Horizon College. All Rights Reserved.
+    </footer>
+</body>
+</html>

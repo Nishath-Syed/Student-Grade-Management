@@ -132,7 +132,7 @@
                 
                     try {
                         Class.forName("oracle.jdbc.driver.OracleDriver");
-                        Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "system", "kento");
+                        Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "username", "password");
                         Statement stmt = con.createStatement();
                         ResultSet rs = stmt.executeQuery("select sname from std");
                         while (rs.next()) {

@@ -8,7 +8,7 @@ if(name!=null)
 try
 {
     Class.forName("oracle.jdbc.driver.OracleDriver");
-    Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","kento");
+    Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","username","password");
     String qry="select sid,sname,sbranch,ssec,sprog from std";
     PreparedStatement pst=con.prepareStatement(qry);
     ResultSet rs=pst.executeQuery();

@@ -87,7 +87,7 @@
             try {
 
                 Class.forName("oracle.jdbc.driver.OracleDriver");
-                Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "system", "kento");
+                Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "username", "password");
 
                 PreparedStatement pstmt = con.prepareStatement("SELECT sid FROM std WHERE sname=?");
                 pstmt.setString(1, sname);
@@ -115,7 +115,7 @@
             } catch (Exception e) {
 
                 e.printStackTrace();
-                out.print("<h2>Failed to store Marks.</h2>");
+                out.print("<h2>Failed to store marks.Marks have already been assigned.</h2>");
             }
             if (marksStored) {
                 %>

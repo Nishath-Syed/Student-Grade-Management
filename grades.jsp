@@ -115,7 +115,7 @@
             try
             {
                 Class.forName("oracle.jdbc.driver.OracleDriver");
-                Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","kento");
+                Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","username","password");
 
                 PreparedStatement pstmt = con.prepareStatement("SELECT sid FROM std WHERE suname=?");
                 pstmt.setString(1, name);
